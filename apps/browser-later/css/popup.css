@@ -1,0 +1,84 @@
+body {
+    width: 200px;
+    height: 180px;
+    margin: 6px;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    -khtml-user-select: none;
+    user-select: none;
+}
+
+.tab-item {
+    
+    border-radius: 5px;
+    padding-left: 6px;
+    display: block;
+}
+
+.tab-text {
+	overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    height: 24px;
+    line-height: 24px;
+}
+
+.del-item {
+    height: 10px;
+    width: 10px;
+    background-color: red;
+    display: none;
+}
+
+.popup-menu {
+    padding: 0px 6px 2px 6px;
+    z-index: 5;
+}
+
+.menu-item {
+    height: 28px;
+    line-height: 28px;
+    border-radius: 5px;
+    padding-left: 6px;
+    display: block;
+}
+
+.popup-menu .menu-item:hover {
+    background-color: rgba(66, 133, 244, 0.06);
+    cursor: pointer;
+}
+
+.clear:hover,
+.add:hover,
+.tab-item:hover,
+.history:hover {
+    color: #4285f4;
+}
+
+.empty:hover {
+	color: #f83240
+}
+
+/**我是想要用 .menu-item:hover来设置鼠标滑过事件的，但是怎么是都没用，就只能改成这种一个一个设置的方法了**/
+.clear:hover,
+.add:hover,
+.tab-item:hover {
+    background: rgba(66, 133, 244, 0.06);
+    cursor: pointer;
+}
+
+.clear {
+    z-index: 2;
+
+}
+
+.add {
+    z-index: 3;
+}
+
+.tabs-container {
+    height: 250px;
+    overflow-y: auto;
+    padding-inline-start: 0;
+}
