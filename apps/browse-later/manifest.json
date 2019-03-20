@@ -1,6 +1,6 @@
 {
     "manifest_version": 2,
-    "name": "Browser Later",
+    "name": "Browse Later",
     "version": "0.1.0",
     "icons":{
         "16": "img/yep.png",
@@ -32,6 +32,6 @@
     "browser_action":
     {
         "default_popup": "popup.html",
-        "default_title": "Browser Later"
+        "default_title": "Browse Later"
     }
 }
